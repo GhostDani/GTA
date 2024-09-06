@@ -1,0 +1,147 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@font-face {
+    font-family:"fontegta" ;
+    src: url(fonts/fontegta.otf);
+}
+
+/* Estiliza o corpo da página */
+body {
+    background-image: url("/images/background.png");
+    background-size: cover; 
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: top; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo{
+    width: 25px;
+
+}
+.pic{
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    margin-top: 50px;
+    line-height:3.5rem;
+    font-family: "fontegta";
+    font-size: 4rem; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:rgb(175, 187, 241);
+    text-align: center; /* Alinha o texto ao centro */
+   
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    border: 2px solid rgb(175, 187, 241);
+    width: 30rem; /* Largura dos inputs */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #000000; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #568AB2; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+section button:hover{
+    background-color: #F28C76; /* Cor de fundo do botão ao passar o mouse */
+    color: #ffffff; /* Cor do texto do botão ao passar o mouse */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: auto; /* Largura máxima da caixa de resultados */
+    height: auto; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 0; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    border: 2px solid rgb(175, 187, 241);
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.397); /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #472346; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #f28d76af; /* Cor de fundo do rodapé */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    
+} 
+
+footer p{
+    padding: 0;
+    color: #500274; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: .9rem; /* Tamanho da fonte */
+}
+
+footer p a{
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+footer p a:hover{
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #30475E; /* Cor do texto dos links ao passar o mouse */
+}
