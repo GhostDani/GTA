@@ -106,19 +106,19 @@ section button:hover{
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: auto; /* Largura máxima da caixa de resultados */
-    height: auto; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 0; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1rem; /* Borda arredondada */
-    height: 30vh;
+    height: 28vh;
     width: 60rem;
+   
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-   
+    margin-bottom: 10px;
+    height: 30vh;
     display: flex;
     flex-direction: row;
     border: 2px solid rgb(175, 187, 241);
