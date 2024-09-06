@@ -8,7 +8,7 @@
 
 /* Estiliza o corpo da página */
 body {
-    background-image: url(".../images/background.png");
+    background-image: url("/images/background.png");
     background-size: cover; 
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
     display: flex; /* Usa Flexbox para layout */
