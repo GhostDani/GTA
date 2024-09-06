@@ -6,6 +6,7 @@
     src: url(fonts/fontegta.otf);
 }
 
+
 /* Estiliza o corpo da página */
 body {
     background-image: url("/images/background.png");
@@ -21,6 +22,15 @@ body {
 }
 
 
+::-webkit-scrollbar{
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, rgba(242,140,118,1) 8%, rgba(108,132,241,1) 88%);
+    border-radius: 10px;
+  }
+  
 .logo{
     width: 25px;
 
@@ -30,6 +40,21 @@ body {
     margin-bottom: 15px;
 }
 
+
+.item-resultado-imagem {
+    margin-right:10px;
+}
+.item-resultado-imagem img {
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    width: 200px;
+    max-height: 250px;
+}
+
+.item-resultado-imagem img:hover{
+    width: 230px;
+    max-height: 280px
+}
 /* Estiliza os títulos h1 */
 h1 {
     margin-top: 50px;
@@ -38,7 +63,7 @@ h1 {
     font-size: 4rem; /* Tamanho da fonte */
     color: #ffffff; /* Cor do texto */
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:rgb(175, 187, 241);
+    -webkit-text-stroke-color:#afbbf1;
     text-align: center; /* Alinha o texto ao centro */
    
 }
@@ -87,14 +112,19 @@ section button:hover{
     margin-top: 0; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1rem; /* Borda arredondada */
+    height: 30vh;
+    width: 60rem;
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
+   
+    display: flex;
+    flex-direction: row;
     border: 2px solid rgb(175, 187, 241);
     background: #FFFFFF; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
+    padding: .2rem; /* Espaçamento interno */
     box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.397); /* Sombra leve */
 }
 
@@ -124,8 +154,9 @@ section button:hover{
 /* Estiliza o rodapé da página */
 footer {
     background-color: #f28d76af; /* Cor de fundo do rodapé */
-    width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    position: fixed;
+    width: 100%;
+    clear: both;
     bottom: 0; /* Alinha ao fundo da página */
     
 } 
